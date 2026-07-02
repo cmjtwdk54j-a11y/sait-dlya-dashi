@@ -11,7 +11,8 @@
   --bg-card-hover: #3a332d;
   --text: #d4c9b8;
   --text-muted: #8a7f70;
-  --accent: #c9b89a;
+  --accent: #c9b89a;       /* декоративный — разделители, иконки, теги */
+  --accent-hot: #c8883a;   /* интерактивный — кнопки, стрелки, ховер */
   --border: rgba(180, 160, 120, 0.18);
   --white: #f0ebe2;
   --font-serif: 'Cormorant Garamond', Georgia, serif;
@@ -59,7 +60,21 @@ a {
 }
 
 .header__logo .dot {
-  color: var(--accent);
+  color: var(--accent-hot);
+  font-size: 10px;
+  vertical-align: middle;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: var(--accent-hot);
+  border-radius: 50%;
+  border: 1.5px solid var(--accent);
+  box-shadow: 0 0 6px rgba(200, 136, 58, 0.5);
+  text-indent: -9999px;
+  overflow: hidden;
+  margin: 0 5px;
+  position: relative;
+  top: -1px;
 }
 
 .header__nav {
@@ -256,8 +271,19 @@ a {
 .hero__content {
   position: relative;
   z-index: 2;
-  padding: 0 48px 80px;
+  padding: 0 48px 80px 60px;
   max-width: 560px;
+}
+
+.hero__content::before {
+  content: '';
+  position: absolute;
+  left: 44px;
+  top: 0;
+  bottom: 80px;
+  width: 1px;
+  background: linear-gradient(to bottom, transparent, var(--accent-hot) 30%, var(--accent) 70%, transparent);
+  opacity: 0.5;
 }
 
 .hero__tags {
@@ -287,25 +313,33 @@ a {
 .hero__btn {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
-  border: 1px solid rgba(180, 160, 120, 0.4);
+  gap: 14px;
+  background: var(--accent-hot);
+  border: 1px solid var(--accent-hot);
   border-radius: 50px;
   padding: 14px 32px;
   font-size: 11px;
   letter-spacing: 4px;
-  color: var(--white);
+  color: #1a1208;
+  font-weight: 500;
   transition: all 0.3s;
   cursor: pointer;
 }
 
 .hero__btn:hover {
-  background: rgba(180, 160, 120, 0.12);
-  border-color: var(--accent);
+  background: #dc9a48;
+  border-color: #dc9a48;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(200, 136, 58, 0.25);
 }
 
 .btn-arrow {
-  color: var(--accent);
   font-size: 16px;
+  transition: transform 0.3s;
+}
+
+.hero__btn:hover .btn-arrow {
+  transform: translateX(4px);
 }
 
 /* ===== CARDS ===== */
@@ -342,13 +376,19 @@ a {
 .card__icon {
   width: 44px;
   height: 44px;
-  color: var(--accent);
-  border: 1px solid var(--border);
+  color: var(--accent-hot);
+  border: 1px solid rgba(200, 136, 58, 0.3);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 10px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.card:hover .card__icon {
+  border-color: var(--accent-hot);
+  box-shadow: 0 0 12px rgba(200, 136, 58, 0.2);
 }
 
 .card__icon svg {
@@ -374,7 +414,7 @@ a {
 
 .card__arrow {
   font-size: 18px;
-  color: var(--accent);
+  color: var(--accent-hot);
   display: block;
   margin-top: auto;
   transition: transform 0.3s;
@@ -482,16 +522,19 @@ a {
   padding: 14px 32px;
   font-size: 11px;
   letter-spacing: 4px;
-  color: var(--bg);
-  background: var(--accent);
-  border: 1px solid var(--accent);
+  color: #1a1208;
+  background: var(--accent-hot);
+  border: 1px solid var(--accent-hot);
   border-radius: 50px;
+  font-weight: 500;
   transition: all 0.3s;
 }
 
 .contact__btn:hover {
-  background: var(--white);
-  border-color: var(--white);
+  background: #dc9a48;
+  border-color: #dc9a48;
+  box-shadow: 0 8px 24px rgba(200, 136, 58, 0.25);
+  transform: translateY(-1px);
 }
 
 .contact__btn--outline {
