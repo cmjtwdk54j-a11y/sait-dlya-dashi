@@ -6,15 +6,15 @@
 }
 
 :root {
-  --bg: #2a2420;
-  --bg-card: #322c27;
-  --bg-card-hover: #3a332d;
-  --text: #d4c9b8;
-  --text-muted: #8a7f70;
-  --accent: #c9b89a;       /* декоративный — разделители, иконки, теги */
-  --accent-hot: #c8883a;   /* интерактивный — кнопки, стрелки, ховер */
-  --border: rgba(180, 160, 120, 0.18);
-  --white: #f0ebe2;
+  --bg: #0f0f0f;
+  --bg-card: #181818;
+  --bg-card-hover: #222222;
+  --text: #e8e0d4;
+  --text-muted: #6e6860;
+  --accent: #c8b896;
+  --accent-hot: #d4a054;
+  --border: rgba(200, 184, 150, 0.14);
+  --white: #f4f0e8;
   --font-serif: 'Playfair Display', Georgia, serif;
   --font-sans: 'DM Sans', sans-serif;
 }
@@ -48,7 +48,7 @@ a {
   align-items: center;
   justify-content: space-between;
   padding: 24px 48px;
-  background: linear-gradient(to bottom, rgba(42,36,32,0.85) 0%, transparent 100%);
+  background: linear-gradient(to bottom, rgba(10,10,10,0.92) 0%, transparent 100%);
 }
 
 .header__logo {
@@ -121,7 +121,7 @@ a {
 .mobile-menu {
   position: fixed;
   inset: 0;
-  background: rgba(42, 36, 32, 0.97);
+  background: rgba(10, 10, 10, 0.97);
   z-index: 200;
   display: flex;
   flex-direction: column;
@@ -191,7 +191,7 @@ a {
 .hero__bg {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at 70% 40%, #3d2d1e 0%, #2a2420 60%);
+  background: radial-gradient(ellipse at 65% 40%, #1c1410 0%, #0a0a0a 65%);
   z-index: 0;
 }
 
@@ -201,7 +201,7 @@ a {
   inset: 0;
   background:
     radial-gradient(ellipse at 10% 50%, rgba(255,255,255,0.04) 0%, transparent 50%),
-    linear-gradient(to bottom, rgba(42,36,32,0) 60%, rgba(42,36,32,1) 100%);
+    linear-gradient(to bottom, rgba(10,10,10,0) 60%, rgba(10,10,10,1) 100%);
 }
 
 .hero__photo {
@@ -569,7 +569,7 @@ a {
 .modal__overlay {
   position: absolute;
   inset: 0;
-  background: rgba(20, 15, 10, 0.88);
+  background: rgba(5, 5, 5, 0.88);
   backdrop-filter: blur(6px);
 }
 
@@ -577,7 +577,7 @@ a {
   position: relative;
   width: min(720px, 94vw);
   max-height: 88vh;
-  background: #2e2822;
+  background: #161616;
   border: 1px solid var(--border);
   border-radius: 16px;
   overflow-y: auto;
@@ -601,7 +601,7 @@ a {
   justify-content: center;
   width: 44px;
   height: 44px;
-  background: rgba(42, 36, 32, 0.9);
+  background: rgba(15, 15, 15, 0.92);
   border: none;
   border-radius: 50%;
   color: var(--text-muted);
@@ -811,7 +811,7 @@ a {
   .hero__bg::after {
     background:
       radial-gradient(ellipse at 10% 50%, rgba(255,255,255,0.03) 0%, transparent 50%),
-      linear-gradient(to bottom, rgba(42,36,32,0) 30%, rgba(42,36,32,0.7) 60%, rgba(42,36,32,1) 100%);
+      linear-gradient(to bottom, rgba(10,10,10,0) 30%, rgba(10,10,10,0.7) 60%, rgba(10,10,10,1) 100%);
   }
 
   .hero__content {
