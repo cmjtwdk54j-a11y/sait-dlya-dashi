@@ -6,9 +6,9 @@
 }
 
 :root {
-  --bg: #141210;
-  --bg-card: #1c1916;
-  --bg-card-hover: #222018;
+  --bg: #2a2420;
+  --bg-card: #322c27;
+  --bg-card-hover: #3a332d;
   --text: #d4c9b8;
   --text-muted: #8a7f70;
   --accent: #c9b89a;
@@ -47,7 +47,7 @@ a {
   align-items: center;
   justify-content: space-between;
   padding: 24px 48px;
-  background: linear-gradient(to bottom, rgba(14,12,10,0.85) 0%, transparent 100%);
+  background: linear-gradient(to bottom, rgba(42,36,32,0.85) 0%, transparent 100%);
 }
 
 .header__logo {
@@ -106,7 +106,7 @@ a {
 .mobile-menu {
   position: fixed;
   inset: 0;
-  background: rgba(14, 12, 10, 0.97);
+  background: rgba(42, 36, 32, 0.97);
   z-index: 200;
   display: flex;
   flex-direction: column;
@@ -176,7 +176,7 @@ a {
 .hero__bg {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at 70% 40%, #2a1f14 0%, #0e0c0a 60%);
+  background: radial-gradient(ellipse at 70% 40%, #3d2d1e 0%, #2a2420 60%);
   z-index: 0;
 }
 
@@ -186,7 +186,7 @@ a {
   inset: 0;
   background:
     radial-gradient(ellipse at 10% 50%, rgba(255,255,255,0.04) 0%, transparent 50%),
-    linear-gradient(to bottom, rgba(14,12,10,0) 60%, rgba(14,12,10,1) 100%);
+    linear-gradient(to bottom, rgba(42,36,32,0) 60%, rgba(42,36,32,1) 100%);
 }
 
 .hero__photo {
@@ -733,7 +733,7 @@ a {
   .hero__bg::after {
     background:
       radial-gradient(ellipse at 10% 50%, rgba(255,255,255,0.03) 0%, transparent 50%),
-      linear-gradient(to bottom, rgba(14,12,10,0) 30%, rgba(14,12,10,0.7) 60%, rgba(14,12,10,1) 100%);
+      linear-gradient(to bottom, rgba(42,36,32,0) 30%, rgba(42,36,32,0.7) 60%, rgba(42,36,32,1) 100%);
   }
 
   .hero__content {
