@@ -50,6 +50,16 @@ document.addEventListener('keydown', e => {
   }
 });
 
+// Healing accordion cards
+document.querySelectorAll('.heal-card__header').forEach(header => {
+  header.addEventListener('click', () => {
+    const card = header.closest('.heal-card');
+    const wasOpen = card.classList.contains('open');
+    card.classList.toggle('open');
+    header.setAttribute('aria-expanded', String(!wasOpen));
+  });
+});
+
 // Card scroll reveal
 const cards = document.querySelectorAll('.card');
 const observer = new IntersectionObserver((entries) => {

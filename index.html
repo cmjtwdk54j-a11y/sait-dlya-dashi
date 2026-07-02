@@ -323,132 +323,223 @@
         <h2 class="modal__title">Заживление</h2>
         <div class="modal__content">
 
-          <!-- ТАТУ -->
-          <h3>Тату</h3>
-          <div class="modal__section">
-            <p class="modal__section-title">Срок заживления</p>
-            <p class="modal__section-time">Поверхностный слой — 2–3 недели · Полное — 2–3 месяца</p>
-            <ul>
-              <li>В первые дни накрывайте тату плёнкой или пластырем для тату (по рекомендации мастера).</li>
-              <li>Промывайте аккуратно тёплой водой с мягким мылом без отдушек, 2 раза в день.</li>
-              <li>После промывания наносите тонкий слой заживляющей мази (бепантен или аналог).</li>
-              <li>Не срывайте корочки и плёнку — они отойдут сами.</li>
-              <li>Не мочите долго в ванне, не ходите в баню/сауну и бассейн минимум 3–4 недели.</li>
-              <li>Защищайте от солнца — ультрафиолет разрушает пигмент. После заживления используйте SPF 50+.</li>
-              <li>Не носите тесную одежду, которая натирает зону тату.</li>
-            </ul>
+          <p class="heal-intro">Базовое правило: <strong>не трогать, не крутить</strong>, обрабатывать солевым раствором 1–2 раза в день, избегать бассейнов, саун и открытых водоёмов.</p>
+
+          <div class="heal-grid">
+
+            <div class="heal-card">
+              <button class="heal-card__header" aria-expanded="false">
+                <div class="heal-card__icon"><span>Т</span></div>
+                <div class="heal-card__meta">
+                  <span class="heal-card__name">Тату</span>
+                  <span class="heal-card__time">Поверхн. 2–3 нед · Полное 2–3 мес</span>
+                </div>
+                <span class="heal-card__chevron">+</span>
+              </button>
+              <div class="heal-card__body-wrap">
+                <div>
+                  <ul>
+                    <li>В первые дни накрывайте тату плёнкой или пластырем.</li>
+                    <li>Промывайте тёплой водой с мягким мылом 2 раза в день.</li>
+                    <li>После промывания наносите тонкий слой бепантена.</li>
+                    <li>Не срывайте корочки и плёнку — они отойдут сами.</li>
+                    <li>Баня, сауна, бассейн — минимум через 3–4 недели.</li>
+                    <li>Защищайте от солнца, после заживления — SPF 50+.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="heal-card">
+              <button class="heal-card__header" aria-expanded="false">
+                <div class="heal-card__icon"><span>М</span></div>
+                <div class="heal-card__meta">
+                  <span class="heal-card__name">Микродермал</span>
+                  <span class="heal-card__time">2–4 месяца</span>
+                </div>
+                <span class="heal-card__chevron">+</span>
+              </button>
+              <div class="heal-card__body-wrap">
+                <div>
+                  <ul>
+                    <li>Солевой раствор 2 раза в день — первые 30 дней, затем 1 раз.</li>
+                    <li><strong>Не трогайте якорь</strong> — любое смещение ведёт к отторжению.</li>
+                    <li>Защищайте от ударов: пластырь или специальная накладка.</li>
+                    <li>Профилактические визиты к мастеру обязательны.</li>
+                    <li>Не снимайте украшение самостоятельно.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="heal-card">
+              <button class="heal-card__header" aria-expanded="false">
+                <div class="heal-card__icon"><span>У</span></div>
+                <div class="heal-card__meta">
+                  <span class="heal-card__name">Мочка</span>
+                  <span class="heal-card__time">1,5–3 месяца</span>
+                </div>
+                <span class="heal-card__chevron">+</span>
+              </button>
+              <div class="heal-card__body-wrap">
+                <div>
+                  <ul>
+                    <li>Обрабатывайте с обеих сторон 2 раза в день первый месяц, затем 1 раз.</li>
+                    <li>Спите на чистой наволочке или подушке-бублике.</li>
+                    <li>Не меняйте украшение раньше срока заживления.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="heal-card">
+              <button class="heal-card__header" aria-expanded="false">
+                <div class="heal-card__icon"><span>Х</span></div>
+                <div class="heal-card__meta">
+                  <span class="heal-card__name">Хрящ</span>
+                  <span class="heal-card__time">6–12 месяцев</span>
+                </div>
+                <span class="heal-card__chevron">+</span>
+              </button>
+              <div class="heal-card__body-wrap">
+                <div>
+                  <ul>
+                    <li>Хрящ заживает долго — не спешите с заменой украшения.</li>
+                    <li>Не спите на стороне пирсинга до полного заживления.</li>
+                    <li>Предупреждайте парикмахера: расчёска — частая причина травм.</li>
+                    <li>Даунсайзинг у мастера через 6–8 недель после спадения отёка.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="heal-card">
+              <button class="heal-card__header" aria-expanded="false">
+                <div class="heal-card__icon"><span>Н</span></div>
+                <div class="heal-card__meta">
+                  <span class="heal-card__name">Нострил · Септум</span>
+                  <span class="heal-card__time">Нострил 3–6 мес · Септум 2–4 мес</span>
+                </div>
+                <span class="heal-card__chevron">+</span>
+              </button>
+              <div class="heal-card__body-wrap">
+                <div>
+                  <ul>
+                    <li>Обрабатывайте снаружи и осторожно изнутри.</li>
+                    <li>Назальные спреи — только по согласованию с мастером.</li>
+                    <li>При насморке — аккуратно, не травмируйте украшение.</li>
+                    <li>Септум: не поднимайте украшение в ноздрю до заживления.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="heal-card">
+              <button class="heal-card__header" aria-expanded="false">
+                <div class="heal-card__icon"><span>Г</span></div>
+                <div class="heal-card__meta">
+                  <span class="heal-card__name">Губы</span>
+                  <span class="heal-card__time">2–3 месяца</span>
+                </div>
+                <span class="heal-card__chevron">+</span>
+              </button>
+              <div class="heal-card__body-wrap">
+                <div>
+                  <ul>
+                    <li>Снаружи — солевой раствор, слизистую — полощите после еды.</li>
+                    <li>Острое, кислое, горячее — ограничить первые 3 недели.</li>
+                    <li>Поцелуи — исключить минимум на 30 дней.</li>
+                    <li>Зубная паста без ментола и спирта.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="heal-card">
+              <button class="heal-card__header" aria-expanded="false">
+                <div class="heal-card__icon"><span>Я</span></div>
+                <div class="heal-card__meta">
+                  <span class="heal-card__name">Язык · Уздечка</span>
+                  <span class="heal-card__time">Язык 1–2 мес · Уздечка до 1 мес</span>
+                </div>
+                <span class="heal-card__chevron">+</span>
+              </button>
+              <div class="heal-card__body-wrap">
+                <div>
+                  <ul>
+                    <li>Полоскания после каждого приёма пищи, напитков, курения.</li>
+                    <li>Отёк на 3–5 день — это норма. Пейте холодную воду.</li>
+                    <li>Даунсайзинг языка обязателен через 10–14 дней — длинная штанга повреждает зубы.</li>
+                    <li>Жвачка и курение — запрет на 2 недели.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="heal-card">
+              <button class="heal-card__header" aria-expanded="false">
+                <div class="heal-card__icon"><span>С</span></div>
+                <div class="heal-card__meta">
+                  <span class="heal-card__name">Соски</span>
+                  <span class="heal-card__time">6–12 месяцев</span>
+                </div>
+                <span class="heal-card__chevron">+</span>
+              </button>
+              <div class="heal-card__body-wrap">
+                <div>
+                  <ul>
+                    <li>Первые 2 месяца — без упражнений на грудь и тяжёлых нагрузок.</li>
+                    <li>Мягкое бельё без косточек, хлопковые вкладыши.</li>
+                    <li>Спите в топе, чтобы не зацепить украшение.</li>
+                    <li>Длительные выделения — это нормальная анатомическая особенность.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="heal-card">
+              <button class="heal-card__header" aria-expanded="false">
+                <div class="heal-card__icon"><span>П</span></div>
+                <div class="heal-card__meta">
+                  <span class="heal-card__name">Пупок</span>
+                  <span class="heal-card__time">6–12 месяцев</span>
+                </div>
+                <span class="heal-card__chevron">+</span>
+              </button>
+              <div class="heal-card__body-wrap">
+                <div>
+                  <ul>
+                    <li>Динамический пресс — стоп на 2 месяца (статика допустима).</li>
+                    <li>Во время душа прикрывайте пластырем от прямого напора.</li>
+                    <li>Высокая талия и тугие резинки — нельзя.</li>
+                    <li>Постоянное сгибание корпуса замедляет заживление.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- /heal-grid -->
+
+          <div class="heal-norms">
+            <div class="heal-norm">
+              <p class="heal-norm__title">✓ Это норма</p>
+              <ul>
+                <li>Боль, отёк, покраснение в первые 1–3 дня</li>
+                <li>Светлые или желтоватые выделения до 3–4 недель</li>
+                <li>Небольшой синяк в зоне прокола</li>
+                <li>Лёгкий зуд по мере заживления</li>
+              </ul>
+            </div>
+            <div class="heal-norm heal-norm--alert">
+              <p class="heal-norm__title">! Напишите мне</p>
+              <ul>
+                <li>Нарастающая боль и сильный отёк спустя несколько дней</li>
+                <li>Гнойные выделения жёлтого или зелёного цвета с запахом</li>
+                <li>Повышение температуры тела</li>
+                <li>Украшение «врастает» в ткань или давит</li>
+              </ul>
+            </div>
           </div>
-
-          <!-- МИКРОДЕРМАЛ -->
-          <h3>Микродермал</h3>
-          <div class="modal__section">
-            <p class="modal__section-title">Срок заживления</p>
-            <p class="modal__section-time">2–4 месяца</p>
-            <ul>
-              <li>Обрабатывайте солевым раствором 2 раза в день первые 30 дней, затем 1 раз.</li>
-              <li><strong>Не трогайте, не двигайте и не крутите якорь</strong> — любое смещение может привести к отторжению.</li>
-              <li>Защищайте от ударов и зацепов одеждой: используйте пластырь или специальную накладку.</li>
-              <li>Профессиональная чистка у мастера предотвращает накопление загрязнений и отторжение — не пренебрегайте визитами.</li>
-              <li>При работе в запылённых условиях закрывайте микродермал пластырем.</li>
-              <li>Не пытайтесь самостоятельно снять или переставить украшение.</li>
-            </ul>
-          </div>
-
-          <!-- ПИРСИНГ -->
-          <h3>Пирсинг</h3>
-          <p>Базовое правило для любого пирсинга: <strong>не трогать, не крутить</strong>, обрабатывать солевым раствором 1–2 раза в день, избегать бассейнов, саун и открытых водоёмов.</p>
-
-          <div class="modal__section">
-            <p class="modal__section-title">Мочка</p>
-            <p class="modal__section-time">1,5–3 месяца</p>
-            <ul>
-              <li>Обрабатывайте с обеих сторон 2 раза в день первый месяц, затем 1 раз.</li>
-              <li>Спите на чистой наволочке или используйте подушку-бублик.</li>
-              <li>Не меняйте украшение раньше срока заживления.</li>
-            </ul>
-          </div>
-
-          <div class="modal__section">
-            <p class="modal__section-title">Хрящ (хеликс, конч, трагус)</p>
-            <p class="modal__section-time">6–12 месяцев</p>
-            <ul>
-              <li>Хрящ заживает дольше — наберитесь терпения и не спешите с заменой украшения.</li>
-              <li>Не спите на стороне пирсинга до полного заживления.</li>
-              <li>Предупреждайте парикмахера: расчёска и фен — частая причина травм хряща.</li>
-              <li>Даунсайзинг (замена на более короткую штангу) проводится у мастера через 6–8 недель после исчезновения отёка.</li>
-            </ul>
-          </div>
-
-          <div class="modal__section">
-            <p class="modal__section-title">Нострил · Септум</p>
-            <p class="modal__section-time">Нострил — 3–6 мес · Септум — 2–4 мес</p>
-            <ul>
-              <li>Обрабатывайте снаружи и осторожно изнутри ноздри.</li>
-              <li>Не используйте назальные спреи и капли на стороне прокола без согласования.</li>
-              <li>При насморке — аккуратно, стараясь не травмировать украшение.</li>
-              <li>Для септума: не поднимайте украшение вверх в ноздрю до заживления.</li>
-            </ul>
-          </div>
-
-          <div class="modal__section">
-            <p class="modal__section-title">Губы</p>
-            <p class="modal__section-time">2–3 месяца</p>
-            <ul>
-              <li>Кожу снаружи обрабатывайте солевым раствором, слизистую — полощите после каждого приёма пищи и курения.</li>
-              <li>Ограничьте острую, кислую и горячую пищу первые 3 недели.</li>
-              <li>Избегайте поцелуев минимум 30 дней.</li>
-              <li>Используйте мягкую зубную пасту без ментола и спирта.</li>
-            </ul>
-          </div>
-
-          <div class="modal__section">
-            <p class="modal__section-title">Язык · Уздечка</p>
-            <p class="modal__section-time">Язык — 1–2 мес · Уздечка — до 1 мес</p>
-            <ul>
-              <li>Полощите рот солевым раствором после каждого приёма пищи, напитков, курения.</li>
-              <li>Отёк языка максимален на 3–5 день — это норма. Пейте холодную воду и ешьте мягкое.</li>
-              <li>Даунсайзинг языка обязателен на 10–14 день — длинная штанга при заживлении повреждает зубы.</li>
-              <li>Не жуйте жвачку, не курите первые 2 недели.</li>
-            </ul>
-          </div>
-
-          <div class="modal__section">
-            <p class="modal__section-title">Соски</p>
-            <p class="modal__section-time">6–12 месяцев</p>
-            <ul>
-              <li>Первые 2 месяца избегайте упражнений на грудь и тяжёлых нагрузок на руки.</li>
-              <li>Носите мягкое бельё без косточек; при необходимости используйте хлопковые вкладыши.</li>
-              <li>Спите в топе или бюстгальтере чтобы не зацепить украшение.</li>
-              <li>Выделения могут продолжаться долго — это нормальная анатомическая особенность.</li>
-            </ul>
-          </div>
-
-          <div class="modal__section">
-            <p class="modal__section-title">Пупок</p>
-            <p class="modal__section-time">6–12 месяцев</p>
-            <ul>
-              <li>Избегайте динамических упражнений на пресс первые 2 месяца (статика допустима).</li>
-              <li>Заклеивайте пластырем во время душа от прямого напора воды.</li>
-              <li>Не носите одежду с высокой талией и тугими резинками.</li>
-              <li>Следите за осанкой — постоянное сгибание замедляет заживление.</li>
-            </ul>
-          </div>
-
-          <h3>Что считается нормой</h3>
-          <ul>
-            <li>Боль, отёк и покраснение в первые 1–3 дня</li>
-            <li>Светлые или желтоватые выделения (лимфа) до 3–4 недель</li>
-            <li>Небольшой синяк в зоне прокола</li>
-            <li>Лёгкий зуд по мере заживления</li>
-          </ul>
-
-          <h3>Тревожные признаки — напишите мне</h3>
-          <ul>
-            <li>Нарастающая боль, сильное покраснение и отёк спустя несколько дней</li>
-            <li>Гнойные выделения жёлтого или зелёного цвета с запахом</li>
-            <li>Повышение температуры тела</li>
-            <li>Украшение «врастает» в ткань или давит</li>
-          </ul>
 
           <p class="modal__note">Любые вопросы по уходу — пишите мне в VK в любое время. Я всегда помогу разобраться.</p>
         </div>
