@@ -15,8 +15,8 @@
   --accent-hot: #c8883a;   /* интерактивный — кнопки, стрелки, ховер */
   --border: rgba(180, 160, 120, 0.18);
   --white: #f0ebe2;
-  --font-serif: 'Cormorant Garamond', Georgia, serif;
-  --font-sans: 'Montserrat', sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'DM Sans', sans-serif;
 }
 
 html {
@@ -27,7 +27,7 @@ body {
   background-color: var(--bg);
   color: var(--text);
   font-family: var(--font-sans);
-  font-weight: 300;
+  font-weight: 400;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
@@ -159,7 +159,7 @@ a {
 .mobile-menu__nav a {
   font-family: var(--font-serif);
   font-size: 28px;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 3px;
   color: var(--white);
   text-transform: uppercase;
@@ -295,10 +295,10 @@ a {
 
 .hero__title {
   font-family: var(--font-serif);
-  font-size: clamp(60px, 9vw, 110px);
-  font-weight: 300;
+  font-size: clamp(56px, 8.5vw, 104px);
+  font-weight: 400;
   line-height: 0.95;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   color: var(--white);
   margin-bottom: 24px;
 }
@@ -458,7 +458,7 @@ a {
 .quote__text {
   font-family: var(--font-serif);
   font-size: clamp(18px, 2.5vw, 24px);
-  font-weight: 300;
+  font-weight: 400;
   font-style: italic;
   line-height: 1.7;
   color: var(--text);
@@ -495,8 +495,8 @@ a {
 .contact__title {
   font-family: var(--font-serif);
   font-size: clamp(36px, 5vw, 56px);
-  font-weight: 300;
-  letter-spacing: 6px;
+  font-weight: 400;
+  letter-spacing: 4px;
   color: var(--white);
   margin-bottom: 20px;
 }
@@ -633,7 +633,7 @@ a {
 .modal__title {
   font-family: var(--font-serif);
   font-size: clamp(28px, 4vw, 44px);
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.1;
   color: var(--white);
   margin-bottom: 32px;
