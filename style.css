@@ -316,9 +316,9 @@ a {
 
 .cards__grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2px;
-  max-width: 1200px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -693,12 +693,6 @@ a {
 }
 
 /* ===== RESPONSIVE ===== */
-@media (max-width: 1024px) {
-  .cards__grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
-  }
-}
 
 @media (max-width: 768px) {
 
