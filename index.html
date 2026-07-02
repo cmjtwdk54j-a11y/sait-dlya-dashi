@@ -4,30 +4,31 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Даша — мастер по тату, пирсингу и микродермалам. Безопасность, эстетика, индивидуальный подход. Записаться через VK." />
-  <meta name="theme-color" content="#0f0f0f" />
-
+  <meta name="theme-color" content="#0a0e1a" />
   <meta property="og:title" content="Д•К — Тату. Пирсинг. Микродермал." />
   <meta property="og:description" content="Мастер по тату, пирсингу и микродермалам. Безопасность. Эстетика. Индивидуальность." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="photo.webp" />
-
   <title>Д•К — Тату. Пирсинг. Микродермал.</title>
-
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preload" as="image" href="photo.webp" fetchpriority="high" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet" />
-
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <!-- HEADER -->
   <header class="header">
-    <div class="header__logo">Д<span class="dot"></span>К</div>
+    <a href="#" class="header__logo">Д<span class="dot"></span>К</a>
     <nav class="header__nav">
-      <a href="https://vk.com/im/convo/276098511?tab=all" target="_blank" rel="noopener" class="header__link">VK</a>
+      <a href="#about" class="header__link">О мастере</a>
+      <span class="nav-dot">·</span>
+      <a href="#gallery" class="header__link">Работы</a>
+      <span class="nav-dot">·</span>
+      <a href="#contact" class="header__link">Записаться</a>
     </nav>
+    <a href="https://vk.com/im/convo/276098511?tab=all" target="_blank" rel="noopener" class="header__cta">Записаться</a>
     <button class="header__burger" aria-label="Меню">
       <span></span><span></span><span></span>
     </button>
@@ -39,9 +40,7 @@
     <nav class="mobile-menu__nav">
       <a href="#about">О мастере</a>
       <a href="#services">Услуги</a>
-      <a href="#contraindications">Противопоказания</a>
-      <a href="#preparation">Подготовка</a>
-      <a href="#healing">Заживление</a>
+      <a href="#gallery">Работы</a>
       <a href="#contact">Записаться</a>
     </nav>
     <div class="mobile-menu__social">
@@ -51,156 +50,214 @@
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero__bg"></div>
-
-    <!-- FERNS -->
-    <div class="ferns">
-      <!-- Fern right top -->
-      <svg class="fern fern--right-top" viewBox="0 0 400 500" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g stroke="currentColor" stroke-width="1.2" stroke-linecap="round">
-          <path d="M200 480 Q195 380 180 280 Q165 180 140 90"/>
-          <path d="M180 320 Q150 300 120 310 Q90 320 70 305"/>
-          <path d="M175 290 Q148 265 118 270 Q88 275 65 258"/>
-          <path d="M170 260 Q145 232 115 235 Q85 238 62 218"/>
-          <path d="M165 230 Q142 200 112 200 Q82 200 58 178"/>
-          <path d="M162 200 Q140 170 110 168 Q80 166 55 142"/>
-          <path d="M158 170 Q138 140 108 136 Q78 132 52 106"/>
-          <path d="M155 140 Q136 108 106 103 Q76 98 50 70"/>
-          <path d="M185 320 Q215 300 245 310 Q275 320 295 305"/>
-          <path d="M188 290 Q218 268 248 272 Q278 276 300 258"/>
-          <path d="M190 260 Q220 235 250 237 Q280 239 303 220"/>
-          <path d="M192 230 Q222 205 252 205 Q282 205 306 185"/>
-          <path d="M193 200 Q223 175 253 173 Q283 171 308 149"/>
-          <path d="M195 170 Q224 144 254 140 Q284 136 310 112"/>
-          <path d="M196 140 Q226 112 256 107 Q286 102 312 76"/>
-        </g>
-      </svg>
-
-      <!-- Fern left bottom -->
-      <svg class="fern fern--left" viewBox="0 0 400 500" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g stroke="currentColor" stroke-width="1.2" stroke-linecap="round">
-          <path d="M200 480 Q195 380 180 280 Q165 180 140 90"/>
-          <path d="M180 320 Q150 300 120 310 Q90 320 70 305"/>
-          <path d="M175 290 Q148 265 118 270 Q88 275 65 258"/>
-          <path d="M170 260 Q145 232 115 235 Q85 238 62 218"/>
-          <path d="M165 230 Q142 200 112 200 Q82 200 58 178"/>
-          <path d="M162 200 Q140 170 110 168 Q80 166 55 142"/>
-          <path d="M158 170 Q138 140 108 136 Q78 132 52 106"/>
-          <path d="M185 320 Q215 300 245 310 Q275 320 295 305"/>
-          <path d="M188 290 Q218 268 248 272 Q278 276 300 258"/>
-          <path d="M190 260 Q220 235 250 237 Q280 239 303 220"/>
-          <path d="M192 230 Q222 205 252 205 Q282 205 306 185"/>
-          <path d="M193 200 Q223 175 253 173 Q283 171 308 149"/>
-          <path d="M195 170 Q224 144 254 140 Q284 136 310 112"/>
-        </g>
-      </svg>
-
-      <!-- Fern right bottom -->
-      <svg class="fern fern--right-bottom" viewBox="0 0 400 500" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g stroke="currentColor" stroke-width="1.2" stroke-linecap="round">
-          <path d="M200 480 Q195 380 180 280 Q165 180 140 90"/>
-          <path d="M180 320 Q150 300 120 310 Q90 320 70 305"/>
-          <path d="M175 290 Q148 265 118 270 Q88 275 65 258"/>
-          <path d="M170 260 Q145 232 115 235 Q85 238 62 218"/>
-          <path d="M185 320 Q215 300 245 310 Q275 320 295 305"/>
-          <path d="M188 290 Q218 268 248 272 Q278 276 300 258"/>
-          <path d="M190 260 Q220 235 250 237 Q280 239 303 220"/>
-        </g>
-      </svg>
-
-      <!-- Small fern center right -->
-      <svg class="fern fern--center-right" viewBox="0 0 400 500" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g stroke="currentColor" stroke-width="1.2" stroke-linecap="round">
-          <path d="M200 480 Q195 380 180 280 Q165 180 140 90"/>
-          <path d="M180 320 Q150 300 120 310 Q90 320 70 305"/>
-          <path d="M175 290 Q148 265 118 270 Q88 275 65 258"/>
-          <path d="M170 260 Q145 232 115 235 Q85 238 62 218"/>
-          <path d="M185 320 Q215 300 245 310 Q275 320 295 305"/>
-          <path d="M188 290 Q218 268 248 272 Q278 276 300 258"/>
-        </g>
-      </svg>
-    </div>
-
-    <picture>
-      <source srcset="photo.webp" type="image/webp" />
-      <img src="photo.png" alt="Мастер" class="hero__photo" fetchpriority="high" decoding="async" />
-    </picture>
-    <div class="hero__content">
-      <p class="hero__tags">ТАТУ&nbsp;•&nbsp;ПИРСИНГ&nbsp;•&nbsp;МИКРОДЕРМАЛ</p>
-      <h1 class="hero__title">ИСКУССТВО<br />НА ТЕЛЕ</h1>
-      <p class="hero__subtitle">Безопасность. Эстетика. Индивидуальность.</p>
-      <a href="#contact" class="hero__btn">
-        <span class="btn-arrow">→</span> ЗАПИСАТЬСЯ
-      </a>
+    <div class="hero__glow"></div>
+    <div class="hero__inner">
+      <div class="hero__left">
+        <div class="hero__eyebrow">
+          <span class="hero__eyebrow-line"></span>
+          <span class="hero__eyebrow-text">ВЕЧНОЕ ИСКУССТВО</span>
+        </div>
+        <h1 class="hero__title">
+          Тело<br/>
+          <em>Как</em><br/>
+          Холст
+        </h1>
+        <p class="hero__subtitle">Художественная студия модификации тела. Премиальный пирсинг, татуировка и микродермалы — где каждая деталь сделана с совершенством.</p>
+        <div class="hero__actions">
+          <a href="#gallery" class="hero__link">Смотреть работы →</a>
+          <a href="https://vk.com/im/convo/276098511?tab=all" target="_blank" rel="noopener" class="hero__btn">Записаться</a>
+        </div>
+      </div>
+      <div class="hero__right">
+        <div class="hero__photo-wrap">
+          <picture>
+            <source srcset="photo.webp" type="image/webp" />
+            <img src="photo.png" alt="Мастер Даша К." class="hero__photo" fetchpriority="high" decoding="async" />
+          </picture>
+          <div class="hero__photo-overlay"></div>
+        </div>
+        <div class="hero__badge">
+          <span>Мастер<br/>Даша К.</span>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- CARDS -->
-  <section class="cards" id="services">
-    <div class="cards__grid">
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="services__inner">
+      <p class="section-label">ЧТО ВАЖНО ЗНАТЬ</p>
+      <div class="services__grid">
 
-      <div class="card" data-modal="modal-about">
-        <div class="card__icon">
-          <!-- Tattoo needle / machine -->
-          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="15" y="6" width="10" height="7" rx="2" stroke="currentColor" stroke-width="1.2"/>
-            <line x1="20" y1="13" x2="20" y2="27" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
-            <path d="M17 24 L20 34 L23 24" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" fill="none"/>
-            <line x1="15" y1="9.5" x2="25" y2="9.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
-          </svg>
+        <div class="card" data-modal="modal-about">
+          <span class="card__num">01</span>
+          <div class="card__icon">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="15" y="6" width="10" height="7" rx="2" stroke="currentColor" stroke-width="1.2"/>
+              <line x1="20" y1="13" x2="20" y2="27" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+              <path d="M17 24 L20 34 L23 24" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" fill="none"/>
+            </svg>
+          </div>
+          <h3 class="card__title">Знакомство<br/>с мастером</h3>
+          <p class="card__text">Подход к работе, ценности и атмосфера студии.</p>
+          <span class="card__arrow">→</span>
         </div>
-        <h3 class="card__title">ЗНАКОМСТВО<br />С МАСТЕРОМ</h3>
-        <p class="card__text">Узнайте больше обо мне, моём подходе к работе и ценностях.</p>
-        <span class="card__arrow">→</span>
-      </div>
 
-      <div class="card" data-modal="modal-contra">
-        <div class="card__icon">
-          <!-- Shield with cross — защита/противопоказания -->
-          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M20 5 L33 10 L33 21 C33 29 27 35 20 38 C13 35 7 29 7 21 L7 10 Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
-            <line x1="20" y1="15" x2="20" y2="25" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
-            <circle cx="20" cy="29" r="1.2" fill="currentColor"/>
-          </svg>
+        <div class="card" data-modal="modal-contra">
+          <span class="card__num">02</span>
+          <div class="card__icon">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 5 L33 10 L33 21 C33 29 27 35 20 38 C13 35 7 29 7 21 L7 10 Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+              <line x1="20" y1="15" x2="20" y2="25" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+              <circle cx="20" cy="29" r="1.2" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3 class="card__title">Противо-<br/>показания</h3>
+          <p class="card__text">Важно знать перед записью на процедуру.</p>
+          <span class="card__arrow">→</span>
         </div>
-        <h3 class="card__title">ПРОТИВОПОКАЗАНИЯ<br />ПЕРЕД ПРОЦЕДУРАМИ</h3>
-        <p class="card__text">Важно знать перед записью. Забота о вашей безопасности — на первом месте.</p>
-        <span class="card__arrow">→</span>
-      </div>
 
-      <div class="card" data-modal="modal-prep">
-        <div class="card__icon">
-          <!-- Checklist с галочкой — подготовка -->
-          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="9" y="10" width="22" height="24" rx="2" stroke="currentColor" stroke-width="1.2"/>
-            <line x1="9" y1="17" x2="31" y2="17" stroke="currentColor" stroke-width="1.2"/>
-            <line x1="15" y1="7" x2="15" y2="13" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
-            <line x1="25" y1="7" x2="25" y2="13" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
-            <polyline points="14,23.5 18,27 26,21" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
+        <div class="card" data-modal="modal-prep">
+          <span class="card__num">03</span>
+          <div class="card__icon">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="9" y="10" width="22" height="24" rx="2" stroke="currentColor" stroke-width="1.2"/>
+              <line x1="9" y1="17" x2="31" y2="17" stroke="currentColor" stroke-width="1.2"/>
+              <line x1="15" y1="7" x2="15" y2="13" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+              <line x1="25" y1="7" x2="25" y2="13" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+              <polyline points="14,23.5 18,27 26,21" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="card__title">Подготовка<br/>к процедуре</h3>
+          <p class="card__text">Что нужно сделать накануне и в день сеанса.</p>
+          <span class="card__arrow">→</span>
         </div>
-        <h3 class="card__title">ПОДГОТОВКА<br />ПЕРЕД ПРОЦЕДУРАМИ</h3>
-        <p class="card__text">Что нужно сделать перед сеансом, чтобы всё прошло комфортно и безопасно.</p>
-        <span class="card__arrow">→</span>
-      </div>
 
-      <div class="card" data-modal="modal-heal">
-        <div class="card__icon">
-          <!-- Лотос — заживление, восстановление -->
-          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M20 33 Q12 26 12 18 Q12 10 20 8 Q28 10 28 18 Q28 26 20 33Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
-            <path d="M20 33 Q8 25 6 16 Q8 7 15 9" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
-            <path d="M20 33 Q32 25 34 16 Q32 7 25 9" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
-            <line x1="20" y1="33" x2="20" y2="37" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
-          </svg>
+        <div class="card" data-modal="modal-heal">
+          <span class="card__num">04</span>
+          <div class="card__icon">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 33 Q12 26 12 18 Q12 10 20 8 Q28 10 28 18 Q28 26 20 33Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+              <path d="M20 33 Q8 25 6 16 Q8 7 15 9" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+              <path d="M20 33 Q32 25 34 16 Q32 7 25 9" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="card__title">Заживление<br/>и уход</h3>
+          <p class="card__text">Рекомендации по уходу для лучшего результата.</p>
+          <span class="card__arrow">→</span>
         </div>
-        <h3 class="card__title">ЗАЖИВЛЕНИЕ</h3>
-        <p class="card__text">Рекомендации по уходу и заживлению для лучшего результата.</p>
-        <span class="card__arrow">→</span>
-      </div>
 
+      </div>
     </div>
   </section>
+
+  <!-- PHILOSOPHY -->
+  <section class="philosophy" id="about">
+    <div class="philosophy__inner">
+      <div class="philosophy__item reveal">
+        <span class="philosophy__num">01.</span>
+        <h3 class="philosophy__title">Авангард</h3>
+        <p class="philosophy__text">Смелые решения, которые подчёркивают вашу индивидуальность. Выхожу за рамки шаблонов — каждая работа уникальна.</p>
+      </div>
+      <div class="philosophy__item reveal">
+        <span class="philosophy__num">02.</span>
+        <h3 class="philosophy__title">Совершенство</h3>
+        <p class="philosophy__text">Каждый прокол и штрих — результат художественного и медицинского образования (2025) и стремления к абсолютному идеалу.</p>
+      </div>
+      <div class="philosophy__item reveal">
+        <span class="philosophy__num">03.</span>
+        <h3 class="philosophy__title">Чистота</h3>
+        <p class="philosophy__text">Лабораторная стерильность в пространстве высокого искусства. Только одноразовые инструменты и имплантационный титан ASTM F136.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery" id="gallery">
+    <div class="gallery__inner">
+      <div class="gallery__head">
+        <h2 class="gallery__title">Галерея<br/><em>Работ</em></h2>
+        <p class="gallery__sub">Портфолио · В разработке</p>
+      </div>
+      <div class="gallery__grid">
+        <div class="gallery__item reveal">
+          <div class="gallery__frame" style="aspect-ratio:4/5">
+            <div class="gallery__placeholder"><span class="gallery__soon">Скоро</span></div>
+          </div>
+          <div class="gallery__meta">
+            <span class="gallery__cat">Тату</span>
+            <h4 class="gallery__name">Работа мастера</h4>
+          </div>
+        </div>
+        <div class="gallery__item gallery__item--offset reveal">
+          <div class="gallery__frame" style="aspect-ratio:3/4">
+            <div class="gallery__placeholder"><span class="gallery__soon">Скоро</span></div>
+          </div>
+          <div class="gallery__meta">
+            <span class="gallery__cat">Пирсинг</span>
+            <h4 class="gallery__name">Работа мастера</h4>
+          </div>
+        </div>
+        <div class="gallery__item reveal">
+          <div class="gallery__frame" style="aspect-ratio:1/1">
+            <div class="gallery__placeholder"><span class="gallery__soon">Скоро</span></div>
+          </div>
+          <div class="gallery__meta">
+            <span class="gallery__cat">Микродермал</span>
+            <h4 class="gallery__name">Работа мастера</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL -->
+  <section class="testimonial">
+    <div class="testimonial__inner">
+      <div class="testimonial__mark">"</div>
+      <blockquote class="testimonial__text">
+        Каждая работа — это диалог между мной и вами.<br/>
+        Я создаю не просто рисунки и проколы, а часть вашей истории.
+      </blockquote>
+      <div class="testimonial__rule"></div>
+      <cite class="testimonial__author">— Даша К., мастер</cite>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact__inner">
+      <div class="contact__left reveal">
+        <h2 class="contact__title">Начнём<br/><em>Ритуал</em></h2>
+        <p class="contact__desc">Создаю искусство, которое остаётся навсегда. Напишите — обсудим каждую деталь вашей процедуры.</p>
+        <a href="https://vk.com/im/convo/276098511?tab=all" target="_blank" rel="noopener" class="contact__vk">
+          <span class="contact__vk-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+              <path d="M15.07 2H8.93C3.33 2 2 3.33 2 8.93v6.14C2 20.67 3.33 22 8.93 22h6.14C20.67 22 22 20.67 22 15.07V8.93C22 3.33 20.67 2 15.07 2zm2.44 13.42h-1.59c-.6 0-.79-.5-1.88-1.6-1-.95-1.43-1.08-1.67-1.08-.34 0-.43.1-.43.57v1.46c0 .4-.13.64-1.19.64-1.76 0-3.71-1.07-5.09-3.06-2.07-2.93-2.64-5.12-2.64-5.57 0-.24.1-.47.57-.47H5.2c.42 0 .58.2.74.66.82 2.36 2.19 4.43 2.76 4.43.21 0 .31-.1.31-.64V9.8c-.07-1.14-.67-1.24-.67-1.64 0-.2.16-.4.42-.4h2.5c.35 0 .47.18.47.6v3.24c0 .35.16.47.26.47.21 0 .39-.12.78-.51 1.21-1.36 2.07-3.44 2.07-3.44.11-.24.31-.47.73-.47h1.59c.48 0 .58.24.48.56-.2.92-2.14 3.67-2.14 3.67-.17.28-.24.4 0 .71.17.24.74.74 1.12 1.19.7.8 1.24 1.47 1.38 1.93.14.46-.1.7-.56.7z"/>
+            </svg>
+          </span>
+          <span>Написать в VK</span>
+        </a>
+      </div>
+      <div class="contact__panel reveal">
+        <div class="contact__panel-glow"></div>
+        <p class="contact__panel-label">Протокол записи</p>
+        <h3 class="contact__panel-title">Ограниченные места</h3>
+        <p class="contact__panel-queue">Текущая очередь: ~2 недели</p>
+        <a href="https://vk.com/im/convo/276098511?tab=all" target="_blank" rel="noopener" class="contact__claim">Записаться</a>
+        <p class="contact__panel-note">Время ответа: до 12 часов</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <p class="footer__copy">© 2026 ДК · Арт Студия</p>
+      <a href="https://vk.com/im/convo/276098511?tab=all" target="_blank" rel="noopener" class="footer__vk">VK</a>
+      <p class="footer__tag">Тату · Пирсинг · Микродермал</p>
+    </div>
+  </footer>
 
   <!-- ===== MODALS ===== -->
 
@@ -297,14 +354,14 @@
           <ul>
             <li><strong>Поешьте за 1–2 часа</strong> до сеанса. Голод снижает болевой порог и может привести к головокружению.</li>
             <li><strong>Примите душ и придите с чистой кожей</strong> в зоне процедуры.</li>
-            <li><strong>Не наносите кремы, лосьоны и масла</strong> на место пирсинга или тату — это затрудняет работу и нарушает асептику.</li>
-            <li><strong>Оденьтесь удобно.</strong> Одежда должна давать свободный доступ к зоне процедуры и не сдавливать её после.</li>
-            <li><strong>Возьмите воду или сок</strong> — во время длительных сеансов это помогает поддерживать уровень сахара в крови.</li>
-            <li><strong>Сообщите мне</strong>, если вы принимаете какие-либо препараты или чувствуете себя нехорошо.</li>
+            <li><strong>Не наносите кремы, лосьоны и масла</strong> на место пирсинга или тату.</li>
+            <li><strong>Оденьтесь удобно.</strong> Одежда должна давать свободный доступ к зоне процедуры.</li>
+            <li><strong>Возьмите воду или сок</strong> — во время длительных сеансов это помогает поддерживать уровень сахара.</li>
+            <li><strong>Сообщите мне</strong>, если принимаете какие-либо препараты или чувствуете себя нехорошо.</li>
           </ul>
           <h3>Для пирсинга дополнительно</h3>
           <ul>
-            <li>Для пирсинга ротовой полости (язык, губа, уздечка) — почистите зубы и прополощите рот за час до процедуры.</li>
+            <li>Для пирсинга ротовой полости — почистите зубы и прополощите рот за час до процедуры.</li>
             <li>Уберите волосы, если пирсинг делается в зоне ушей или шеи.</li>
           </ul>
           <p class="modal__note">Хорошая подготовка — это уже половина успеха. Если есть вопросы — пишите до визита, я всегда на связи.</p>
@@ -336,18 +393,14 @@
                 </div>
                 <span class="heal-card__chevron">+</span>
               </button>
-              <div class="heal-card__body-wrap">
-                <div>
-                  <ul>
-                    <li>В первые дни накрывайте тату плёнкой или пластырем.</li>
-                    <li>Промывайте тёплой водой с мягким мылом 2 раза в день.</li>
-                    <li>После промывания наносите тонкий слой бепантена.</li>
-                    <li>Не срывайте корочки и плёнку — они отойдут сами.</li>
-                    <li>Баня, сауна, бассейн — минимум через 3–4 недели.</li>
-                    <li>Защищайте от солнца, после заживления — SPF 50+.</li>
-                  </ul>
-                </div>
-              </div>
+              <div class="heal-card__body-wrap"><div><ul>
+                <li>В первые дни накрывайте тату плёнкой или пластырем.</li>
+                <li>Промывайте тёплой водой с мягким мылом 2 раза в день.</li>
+                <li>После промывания наносите тонкий слой бепантена.</li>
+                <li>Не срывайте корочки и плёнку — они отойдут сами.</li>
+                <li>Баня, сауна, бассейн — минимум через 3–4 недели.</li>
+                <li>Защищайте от солнца, после заживления — SPF 50+.</li>
+              </ul></div></div>
             </div>
 
             <div class="heal-card">
@@ -359,17 +412,13 @@
                 </div>
                 <span class="heal-card__chevron">+</span>
               </button>
-              <div class="heal-card__body-wrap">
-                <div>
-                  <ul>
-                    <li>Солевой раствор 2 раза в день — первые 30 дней, затем 1 раз.</li>
-                    <li><strong>Не трогайте якорь</strong> — любое смещение ведёт к отторжению.</li>
-                    <li>Защищайте от ударов: пластырь или специальная накладка.</li>
-                    <li>Профилактические визиты к мастеру обязательны.</li>
-                    <li>Не снимайте украшение самостоятельно.</li>
-                  </ul>
-                </div>
-              </div>
+              <div class="heal-card__body-wrap"><div><ul>
+                <li>Солевой раствор 2 раза в день — первые 30 дней, затем 1 раз.</li>
+                <li><strong>Не трогайте якорь</strong> — любое смещение ведёт к отторжению.</li>
+                <li>Защищайте от ударов: пластырь или специальная накладка.</li>
+                <li>Профилактические визиты к мастеру обязательны.</li>
+                <li>Не снимайте украшение самостоятельно.</li>
+              </ul></div></div>
             </div>
 
             <div class="heal-card">
@@ -381,15 +430,11 @@
                 </div>
                 <span class="heal-card__chevron">+</span>
               </button>
-              <div class="heal-card__body-wrap">
-                <div>
-                  <ul>
-                    <li>Обрабатывайте с обеих сторон 2 раза в день первый месяц, затем 1 раз.</li>
-                    <li>Спите на чистой наволочке или подушке-бублике.</li>
-                    <li>Не меняйте украшение раньше срока заживления.</li>
-                  </ul>
-                </div>
-              </div>
+              <div class="heal-card__body-wrap"><div><ul>
+                <li>Обрабатывайте с обеих сторон 2 раза в день первый месяц, затем 1 раз.</li>
+                <li>Спите на чистой наволочке или подушке-бублике.</li>
+                <li>Не меняйте украшение раньше срока заживления.</li>
+              </ul></div></div>
             </div>
 
             <div class="heal-card">
@@ -401,16 +446,12 @@
                 </div>
                 <span class="heal-card__chevron">+</span>
               </button>
-              <div class="heal-card__body-wrap">
-                <div>
-                  <ul>
-                    <li>Хрящ заживает долго — не спешите с заменой украшения.</li>
-                    <li>Не спите на стороне пирсинга до полного заживления.</li>
-                    <li>Предупреждайте парикмахера: расчёска — частая причина травм.</li>
-                    <li>Даунсайзинг у мастера через 6–8 недель после спадения отёка.</li>
-                  </ul>
-                </div>
-              </div>
+              <div class="heal-card__body-wrap"><div><ul>
+                <li>Хрящ заживает долго — не спешите с заменой украшения.</li>
+                <li>Не спите на стороне пирсинга до полного заживления.</li>
+                <li>Предупреждайте парикмахера: расчёска — частая причина травм.</li>
+                <li>Даунсайзинг у мастера через 6–8 недель после спадения отёка.</li>
+              </ul></div></div>
             </div>
 
             <div class="heal-card">
@@ -422,16 +463,12 @@
                 </div>
                 <span class="heal-card__chevron">+</span>
               </button>
-              <div class="heal-card__body-wrap">
-                <div>
-                  <ul>
-                    <li>Обрабатывайте снаружи и осторожно изнутри.</li>
-                    <li>Назальные спреи — только по согласованию с мастером.</li>
-                    <li>При насморке — аккуратно, не травмируйте украшение.</li>
-                    <li>Септум: не поднимайте украшение в ноздрю до заживления.</li>
-                  </ul>
-                </div>
-              </div>
+              <div class="heal-card__body-wrap"><div><ul>
+                <li>Обрабатывайте снаружи и осторожно изнутри.</li>
+                <li>Назальные спреи — только по согласованию с мастером.</li>
+                <li>При насморке — аккуратно, не травмируйте украшение.</li>
+                <li>Септум: не поднимайте украшение в ноздрю до заживления.</li>
+              </ul></div></div>
             </div>
 
             <div class="heal-card">
@@ -443,16 +480,12 @@
                 </div>
                 <span class="heal-card__chevron">+</span>
               </button>
-              <div class="heal-card__body-wrap">
-                <div>
-                  <ul>
-                    <li>Снаружи — солевой раствор, слизистую — полощите после еды.</li>
-                    <li>Острое, кислое, горячее — ограничить первые 3 недели.</li>
-                    <li>Поцелуи — исключить минимум на 30 дней.</li>
-                    <li>Зубная паста без ментола и спирта.</li>
-                  </ul>
-                </div>
-              </div>
+              <div class="heal-card__body-wrap"><div><ul>
+                <li>Снаружи — солевой раствор, слизистую — полощите после еды.</li>
+                <li>Острое, кислое, горячее — ограничить первые 3 недели.</li>
+                <li>Поцелуи — исключить минимум на 30 дней.</li>
+                <li>Зубная паста без ментола и спирта.</li>
+              </ul></div></div>
             </div>
 
             <div class="heal-card">
@@ -464,16 +497,12 @@
                 </div>
                 <span class="heal-card__chevron">+</span>
               </button>
-              <div class="heal-card__body-wrap">
-                <div>
-                  <ul>
-                    <li>Полоскания после каждого приёма пищи, напитков, курения.</li>
-                    <li>Отёк на 3–5 день — это норма. Пейте холодную воду.</li>
-                    <li>Даунсайзинг языка обязателен через 10–14 дней — длинная штанга повреждает зубы.</li>
-                    <li>Жвачка и курение — запрет на 2 недели.</li>
-                  </ul>
-                </div>
-              </div>
+              <div class="heal-card__body-wrap"><div><ul>
+                <li>Полоскания после каждого приёма пищи, напитков, курения.</li>
+                <li>Отёк на 3–5 день — это норма. Пейте холодную воду.</li>
+                <li>Даунсайзинг языка обязателен через 10–14 дней.</li>
+                <li>Жвачка и курение — запрет на 2 недели.</li>
+              </ul></div></div>
             </div>
 
             <div class="heal-card">
@@ -485,16 +514,12 @@
                 </div>
                 <span class="heal-card__chevron">+</span>
               </button>
-              <div class="heal-card__body-wrap">
-                <div>
-                  <ul>
-                    <li>Первые 2 месяца — без упражнений на грудь и тяжёлых нагрузок.</li>
-                    <li>Мягкое бельё без косточек, хлопковые вкладыши.</li>
-                    <li>Спите в топе, чтобы не зацепить украшение.</li>
-                    <li>Длительные выделения — это нормальная анатомическая особенность.</li>
-                  </ul>
-                </div>
-              </div>
+              <div class="heal-card__body-wrap"><div><ul>
+                <li>Первые 2 месяца — без упражнений на грудь и тяжёлых нагрузок.</li>
+                <li>Мягкое бельё без косточек, хлопковые вкладыши.</li>
+                <li>Спите в топе, чтобы не зацепить украшение.</li>
+                <li>Длительные выделения — это нормальная анатомическая особенность.</li>
+              </ul></div></div>
             </div>
 
             <div class="heal-card">
@@ -506,19 +531,15 @@
                 </div>
                 <span class="heal-card__chevron">+</span>
               </button>
-              <div class="heal-card__body-wrap">
-                <div>
-                  <ul>
-                    <li>Динамический пресс — стоп на 2 месяца (статика допустима).</li>
-                    <li>Во время душа прикрывайте пластырем от прямого напора.</li>
-                    <li>Высокая талия и тугие резинки — нельзя.</li>
-                    <li>Постоянное сгибание корпуса замедляет заживление.</li>
-                  </ul>
-                </div>
-              </div>
+              <div class="heal-card__body-wrap"><div><ul>
+                <li>Динамический пресс — стоп на 2 месяца (статика допустима).</li>
+                <li>Во время душа прикрывайте пластырем от прямого напора.</li>
+                <li>Высокая талия и тугие резинки — нельзя.</li>
+                <li>Постоянное сгибание корпуса замедляет заживление.</li>
+              </ul></div></div>
             </div>
 
-          </div><!-- /heal-grid -->
+          </div>
 
           <div class="heal-norms">
             <div class="heal-norm">
@@ -534,7 +555,7 @@
               <p class="heal-norm__title">! Напишите мне</p>
               <ul>
                 <li>Нарастающая боль и сильный отёк спустя несколько дней</li>
-                <li>Гнойные выделения жёлтого или зелёного цвета с запахом</li>
+                <li>Гнойные выделения с запахом</li>
                 <li>Повышение температуры тела</li>
                 <li>Украшение «врастает» в ткань или давит</li>
               </ul>
@@ -546,51 +567,6 @@
       </div>
     </div>
   </div>
-
-  <!-- DIVIDER -->
-  <div class="divider">
-    <span class="divider__star">✦</span>
-    <div class="divider__line"></div>
-  </div>
-
-  <!-- QUOTE -->
-  <section class="quote">
-    <blockquote class="quote__text">
-      "Каждая работа — это диалог между мной и вами.<br />
-      Я создаю не просто рисунки и проколы, а часть вашей истории."
-    </blockquote>
-    <div class="quote__signature">
-      <svg viewBox="0 0 80 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="signature-svg">
-        <path d="M10 30 Q20 5 30 20 Q40 35 50 15 Q60 0 70 25" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-      </svg>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="contact" id="contact">
-    <div class="divider__line"></div>
-    <h2 class="contact__title">ЗАПИСАТЬСЯ</h2>
-    <p class="contact__text">Выберите удобный способ связи — напишите мне в VK, и мы обсудим все детали.</p>
-    <div class="contact__links">
-      <a href="https://vk.com/im/convo/276098511?tab=all" target="_blank" rel="noopener" class="contact__btn">VK</a>
-    </div>
-    <div class="divider__line"></div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer__left">
-      <span>© 2026</span>
-      <span>Все права защищены</span>
-    </div>
-    <div class="footer__center">
-      <a href="https://vk.com/im/convo/276098511?tab=all" target="_blank" rel="noopener">VK</a>
-    </div>
-    <div class="footer__right">
-      <span>Разработка сайта</span>
-      <span>— ваше вдохновение</span>
-    </div>
-  </footer>
 
   <script src="script.js"></script>
 </body>

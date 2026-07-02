@@ -34,9 +34,7 @@ function closeModal(modal) {
 }
 
 document.querySelectorAll('.card[data-modal]').forEach(card => {
-  card.addEventListener('click', () => {
-    openModal(card.dataset.modal);
-  });
+  card.addEventListener('click', () => openModal(card.dataset.modal));
 });
 
 document.querySelectorAll('.modal').forEach(modal => {
@@ -45,12 +43,10 @@ document.querySelectorAll('.modal').forEach(modal => {
 });
 
 document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') {
-    document.querySelectorAll('.modal.open').forEach(closeModal);
-  }
+  if (e.key === 'Escape') document.querySelectorAll('.modal.open').forEach(closeModal);
 });
 
-// Healing accordion cards
+// Healing accordion
 document.querySelectorAll('.heal-card__header').forEach(header => {
   header.addEventListener('click', () => {
     const card = header.closest('.heal-card');
@@ -60,17 +56,16 @@ document.querySelectorAll('.heal-card__header').forEach(header => {
   });
 });
 
-// Card scroll reveal
-const cards = document.querySelectorAll('.card');
+// Scroll reveal
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry, i) => {
     if (entry.isIntersecting) {
-      setTimeout(() => {
-        entry.target.classList.add('visible');
-      }, i * 100);
+      setTimeout(() => entry.target.classList.add('visible'), i * 80);
       observer.unobserve(entry.target);
     }
   });
 }, { threshold: 0.1 });
 
-cards.forEach(card => observer.observe(card));
+document.querySelectorAll('.card, .reveal, .philosophy__item, .gallery__item').forEach(el => {
+  observer.observe(el);
+});
