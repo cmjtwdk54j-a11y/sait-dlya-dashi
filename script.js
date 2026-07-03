@@ -50,6 +50,17 @@ document.addEventListener('keydown', e => {
   }
 });
 
+// Healing tabs
+document.querySelectorAll('.heal-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const target = btn.dataset.heal;
+    document.querySelectorAll('.heal-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.heal-panel').forEach(p => p.classList.remove('active'));
+    document.querySelector(`.heal-panel[data-heal="${target}"]`).classList.add('active');
+  });
+});
+
 // Card scroll reveal
 const cards = document.querySelectorAll('.card');
 const observer = new IntersectionObserver((entries) => {
