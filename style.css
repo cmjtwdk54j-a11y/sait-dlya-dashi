@@ -3,6 +3,12 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button, a, [data-modal], .heal-cat, .heal-sub, .heal-btn, .card {
+  touch-action: manipulation;
+  cursor: pointer;
 }
 
 :root {
@@ -619,8 +625,7 @@ a {
 .modal__overlay {
   position: absolute;
   inset: 0;
-  background: rgba(6, 8, 3, 0.80);
-  backdrop-filter: blur(4px);
+  background: rgba(6, 8, 3, 0.85);
 }
 
 .modal__panel {
@@ -981,6 +986,7 @@ a {
     object-position: top center;
     opacity: 1;
     filter: none;
+    pointer-events: none;
     -webkit-mask-image: linear-gradient(to bottom, black 45%, transparent 100%);
     mask-image: linear-gradient(to bottom, black 45%, transparent 100%);
     -webkit-mask-composite: unset;
