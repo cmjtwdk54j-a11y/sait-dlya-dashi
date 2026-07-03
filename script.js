@@ -50,14 +50,26 @@ document.addEventListener('keydown', e => {
   }
 });
 
-// Healing tabs
-document.querySelectorAll('.heal-btn').forEach(btn => {
+// Healing: главные категории
+document.querySelectorAll('.heal-cat').forEach(btn => {
   btn.addEventListener('click', () => {
-    const target = btn.dataset.heal;
-    document.querySelectorAll('.heal-btn').forEach(b => b.classList.remove('active'));
+    const cat = btn.dataset.cat;
+    document.querySelectorAll('.heal-cat').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
-    document.querySelectorAll('.heal-panel').forEach(p => p.classList.remove('active'));
-    document.querySelector(`.heal-panel[data-heal="${target}"]`).classList.add('active');
+    document.querySelectorAll('.heal-section').forEach(s => s.classList.remove('active'));
+    document.querySelector(`.heal-section[data-cat="${cat}"]`).classList.add('active');
+  });
+});
+
+// Healing: подкатегории (работает для любой секции)
+document.querySelectorAll('.heal-sub').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const sub = btn.dataset.sub;
+    const section = btn.closest('.heal-section');
+    section.querySelectorAll('.heal-sub').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    section.querySelectorAll('.heal-sub-panel').forEach(p => p.classList.remove('active'));
+    section.querySelector(`.heal-sub-panel[data-sub="${sub}"]`).classList.add('active');
   });
 });
 

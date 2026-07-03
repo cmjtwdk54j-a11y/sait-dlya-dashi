@@ -745,80 +745,124 @@ a {
 }
 
 /* ===== HEALING TABS ===== */
-
-.heal-intro {
-  font-size: 13px;
-  line-height: 1.8;
-  color: var(--text-muted);
-  margin-bottom: 28px;
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
-.heal-nav {
+.heal-cats {
+  display: flex;
+  margin-bottom: 32px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.heal-cat {
+  flex: 1;
+  background: none;
+  border: none;
+  border-right: 1px solid var(--border);
+  padding: 14px 8px;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.25s;
+  text-transform: uppercase;
+}
+
+.heal-cat:last-child {
+  border-right: none;
+}
+
+.heal-cat:hover {
+  color: var(--accent);
+  background: rgba(196, 180, 138, 0.05);
+}
+
+.heal-cat:active {
+  transform: scale(0.97);
+}
+
+.heal-cat.active {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+.heal-section {
+  display: none;
+}
+
+.heal-section.active {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+
+.heal-section__lead {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.heal-sub-nav {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-bottom: 36px;
+  margin-bottom: 28px;
 }
 
-.heal-btn {
+.heal-sub {
   background: none;
   border: 1px solid var(--border);
   border-radius: 50px;
-  padding: 8px 18px;
+  padding: 7px 16px;
   font-family: var(--font-sans);
   font-size: 11px;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
   color: var(--text-muted);
   cursor: pointer;
   transition: all 0.22s;
 }
 
-.heal-btn:hover {
+.heal-sub:hover {
   border-color: var(--accent);
   color: var(--accent);
 }
 
-.heal-btn:active {
+.heal-sub:active {
   transform: scale(0.95);
 }
 
-.heal-btn.active {
-  background: var(--accent);
+.heal-sub.active {
+  background: rgba(196, 180, 138, 0.12);
   border-color: var(--accent);
-  color: var(--bg);
-  box-shadow: 0 4px 16px rgba(196, 180, 138, 0.2);
+  color: var(--accent);
 }
 
-.heal-panels {
-  margin-bottom: 40px;
-}
-
-.heal-panel {
+.heal-sub-panel {
   display: none;
 }
 
-.heal-panel.active {
+.heal-sub-panel.active {
   display: block;
-  animation: fadeIn 0.3s ease;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(8px); }
-  to   { opacity: 1; transform: translateY(0); }
+  animation: fadeIn 0.25s ease;
 }
 
 .heal-time {
   display: flex;
   align-items: baseline;
   gap: 10px;
-  margin-bottom: 28px;
-  padding-bottom: 24px;
+  margin-bottom: 24px;
+  padding-bottom: 20px;
   border-bottom: 1px solid var(--border);
 }
 
 .heal-time__num {
   font-family: var(--font-serif);
-  font-size: clamp(48px, 8vw, 72px);
+  font-size: clamp(44px, 7vw, 64px);
   font-weight: 300;
   color: var(--white);
   line-height: 1;
@@ -830,7 +874,8 @@ a {
   color: var(--accent);
 }
 
-.heal-panel ul {
+.heal-section ul,
+.heal-sub-panel ul {
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -838,7 +883,8 @@ a {
   margin-bottom: 24px;
 }
 
-.heal-panel ul li {
+.heal-section ul li,
+.heal-sub-panel ul li {
   font-size: 14px;
   line-height: 1.75;
   color: var(--text);
@@ -846,49 +892,13 @@ a {
   position: relative;
 }
 
-.heal-panel ul li::before {
+.heal-section ul li::before,
+.heal-sub-panel ul li::before {
   content: '—';
   position: absolute;
   left: 0;
   color: var(--accent);
   font-size: 12px;
-}
-
-.heal-universal {
-  padding: 24px;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  background: rgba(180, 160, 120, 0.04);
-}
-
-.heal-universal__title {
-  font-size: 10px;
-  letter-spacing: 3px;
-  color: var(--accent);
-  margin-bottom: 16px;
-  text-transform: uppercase;
-}
-
-.heal-universal ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.heal-universal ul li {
-  font-size: 13px;
-  line-height: 1.7;
-  color: var(--text-muted);
-  padding-left: 16px;
-  position: relative;
-}
-
-.heal-universal ul li::before {
-  content: '·';
-  position: absolute;
-  left: 0;
-  color: var(--accent);
 }
 
 /* ===== FOOTER ===== */
