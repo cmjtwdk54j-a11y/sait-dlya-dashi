@@ -18,6 +18,16 @@
 </head>
 <body>
 
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- Scroll progress -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Film grain overlay -->
+  <div class="grain" aria-hidden="true"></div>
+
   <!-- HEADER -->
   <header class="header">
     <a href="#" class="header__logo">Д<span class="dot"></span>К</a>
@@ -81,6 +91,24 @@
       </div>
     </div>
   </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>ТАТУ</span><span class="marquee__sep">✦</span>
+      <span>ПИРСИНГ</span><span class="marquee__sep">✦</span>
+      <span>МИКРОДЕРМАЛ</span><span class="marquee__sep">✦</span>
+      <span>БЕЗОПАСНОСТЬ</span><span class="marquee__sep">✦</span>
+      <span>ЭСТЕТИКА</span><span class="marquee__sep">✦</span>
+      <span>ИНДИВИДУАЛЬНОСТЬ</span><span class="marquee__sep">✦</span>
+      <span>ТАТУ</span><span class="marquee__sep">✦</span>
+      <span>ПИРСИНГ</span><span class="marquee__sep">✦</span>
+      <span>МИКРОДЕРМАЛ</span><span class="marquee__sep">✦</span>
+      <span>БЕЗОПАСНОСТЬ</span><span class="marquee__sep">✦</span>
+      <span>ЭСТЕТИКА</span><span class="marquee__sep">✦</span>
+      <span>ИНДИВИДУАЛЬНОСТЬ</span><span class="marquee__sep">✦</span>
+    </div>
+  </div>
 
   <!-- SERVICES -->
   <section class="services" id="services">
@@ -153,6 +181,11 @@
   <!-- PHILOSOPHY -->
   <section class="philosophy" id="about">
     <div class="philosophy__inner">
+      <div class="philosophy__head reveal">
+        <p class="section-label">МОЙ ПОДХОД</p>
+        <h2 class="philosophy__heading">Почему меня<br/><em>выбирают</em></h2>
+      </div>
+      <div class="philosophy__cols">
       <div class="philosophy__item reveal">
         <span class="philosophy__num">01.</span>
         <h3 class="philosophy__title">Авангард</h3>
@@ -167,6 +200,7 @@
         <span class="philosophy__num">03.</span>
         <h3 class="philosophy__title">Чистота</h3>
         <p class="philosophy__text">Лабораторная стерильность в пространстве высокого искусства. Только одноразовые инструменты и имплантационный титан ASTM F136.</p>
+      </div>
       </div>
     </div>
   </section>
@@ -251,6 +285,7 @@
 
   <!-- FOOTER -->
   <footer class="footer">
+    <div class="footer__watermark" aria-hidden="true">Д•К</div>
     <div class="footer__inner">
       <p class="footer__copy">© 2026 ДК · Арт Студия</p>
       <a href="https://vk.com/im/convo/276098511?tab=all" target="_blank" rel="noopener" class="footer__vk">VK</a>
