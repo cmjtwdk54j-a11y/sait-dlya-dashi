@@ -458,13 +458,7 @@ a { text-decoration: none; color: inherit; }
   animation: scrollPulse 2.2s ease-in-out infinite;
 }
 
-.hero__scroll-text {
-  font-size: 8px;
-  font-weight: 700;
-  letter-spacing: 4px;
-  color: var(--text-muted);
-  text-transform: uppercase;
-}
+.hero__scroll-text { display: none; }
 
 @keyframes pulse {
   0%, 100% { opacity: 1; box-shadow: 0 0 8px rgba(16,185,129,0.5); }
