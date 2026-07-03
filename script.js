@@ -1,37 +1,5 @@
-// ── Custom cursor (desktop only)
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const isDesktop = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
-const cursor = document.getElementById('cursor');
-const cursorTrail = document.getElementById('cursorTrail');
-
-if (isDesktop && cursor && cursorTrail) {
-  let mx = -200, my = -200;
-  let tx = -200, ty = -200;
-
-  document.addEventListener('mousemove', e => {
-    mx = e.clientX;
-    my = e.clientY;
-    cursor.style.transform = `translate3d(${mx}px, ${my}px, 0)`;
-  });
-
-  (function animateTrail() {
-    tx += (mx - tx) * 0.13;
-    ty += (my - ty) * 0.13;
-    cursorTrail.style.transform = `translate3d(${tx}px, ${ty}px, 0)`;
-    requestAnimationFrame(animateTrail);
-  })();
-
-  document.querySelectorAll('a, button, .card').forEach(el => {
-    el.addEventListener('mouseenter', () => {
-      cursor.classList.add('cursor--hover');
-      cursorTrail.classList.add('cursor-trail--hover');
-    });
-    el.addEventListener('mouseleave', () => {
-      cursor.classList.remove('cursor--hover');
-      cursorTrail.classList.remove('cursor-trail--hover');
-    });
-  });
-}
 
 // ── Scroll progress bar
 const progressBar = document.getElementById('scrollProgress');
@@ -43,16 +11,6 @@ if (progressBar) {
   window.addEventListener('scroll', updateProgress, { passive: true });
 }
 
-// ── Parallax on hero
-const heroPhoto = document.querySelector('.hero__photo');
-const heroLeft  = document.querySelector('.hero__left');
-
-window.addEventListener('scroll', () => {
-  const y = window.scrollY;
-  if (y > window.innerHeight) return;
-  if (heroPhoto) heroPhoto.style.transform = `translateX(-50%) translateY(${y * 0.12}px)`;
-  if (heroLeft)  heroLeft.style.transform  = `translateY(${y * 0.04}px)`;
-}, { passive: true });
 
 // ── Mobile menu
 const burger     = document.querySelector('.header__burger');
