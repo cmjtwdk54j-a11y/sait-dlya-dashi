@@ -570,7 +570,8 @@ a {
   inset: 0;
   z-index: 300;
   display: flex;
-  align-items: stretch;
+  align-items: center;
+  justify-content: center;
   pointer-events: none;
   opacity: 0;
   transition: opacity 0.4s ease;
@@ -590,18 +591,18 @@ a {
 
 .modal__panel {
   position: relative;
-  margin-left: auto;
-  width: min(580px, 100%);
-  height: 100%;
+  width: min(660px, 92vw);
+  max-height: 88vh;
   background: #1a1714;
-  border-left: 1px solid var(--border);
+  border: 1px solid var(--border);
+  border-radius: 16px;
   overflow-y: auto;
-  transform: translateX(60px);
+  transform: scale(0.96) translateY(16px);
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .modal.open .modal__panel {
-  transform: translateX(0);
+  transform: scale(1) translateY(0);
 }
 
 .modal__close {
@@ -712,21 +713,6 @@ a {
 }
 
 /* ===== HEALING TABS ===== */
-.modal__panel--heal {
-  margin: auto;
-  align-self: center;
-  width: min(660px, 92vw);
-  height: auto;
-  max-height: 88vh;
-  border-left: none;
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  transform: scale(0.96) translateY(16px);
-}
-
-.modal.open .modal__panel--heal {
-  transform: scale(1) translateY(0);
-}
 
 .heal-intro {
   font-size: 13px;
