@@ -964,15 +964,31 @@ a {
     display: flex;
   }
 
-  .hero__content {
-    padding: 0 20px 56px;
-    max-width: 100%;
+  .ferns {
+    display: none;
   }
 
   .hero__photo {
-    right: -5%;
-    height: 65%;
-    opacity: 0.4;
+    top: 0;
+    bottom: auto;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 62vh;
+    object-fit: cover;
+    object-position: top center;
+    opacity: 1;
+    filter: none;
+    -webkit-mask-image: linear-gradient(to bottom, black 45%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 45%, transparent 100%);
+    -webkit-mask-composite: unset;
+    mask-composite: unset;
+  }
+
+  .hero__content {
+    padding: 0 20px 52px;
+    max-width: 100%;
+    margin-top: auto;
   }
 
   .cards {
