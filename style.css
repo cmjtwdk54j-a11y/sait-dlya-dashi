@@ -713,7 +713,19 @@ a {
 
 /* ===== HEALING TABS ===== */
 .modal__panel--heal {
-  width: min(640px, 100%);
+  margin: auto;
+  align-self: center;
+  width: min(660px, 92vw);
+  height: auto;
+  max-height: 88vh;
+  border-left: none;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  transform: scale(0.96) translateY(16px);
+}
+
+.modal.open .modal__panel--heal {
+  transform: scale(1) translateY(0);
 }
 
 .heal-intro {
