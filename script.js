@@ -11,15 +11,13 @@ if (isDesktop && cursor && cursorTrail) {
   document.addEventListener('mousemove', e => {
     mx = e.clientX;
     my = e.clientY;
-    cursor.style.left = mx + 'px';
-    cursor.style.top  = my + 'px';
+    cursor.style.transform = `translate3d(${mx}px, ${my}px, 0)`;
   });
 
   (function animateTrail() {
     tx += (mx - tx) * 0.13;
     ty += (my - ty) * 0.13;
-    cursorTrail.style.left = tx + 'px';
-    cursorTrail.style.top  = ty + 'px';
+    cursorTrail.style.transform = `translate3d(${tx}px, ${ty}px, 0)`;
     requestAnimationFrame(animateTrail);
   })();
 
