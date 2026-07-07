@@ -54,6 +54,16 @@ a {
   justify-content: space-between;
   padding: 24px 48px;
   background: linear-gradient(to bottom, rgba(9,11,5,0.90) 0%, transparent 100%);
+  transition: background 0.4s, backdrop-filter 0.4s, padding 0.4s;
+}
+
+.header.scrolled {
+  background: rgba(9, 11, 5, 0.96);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border);
 }
 
 .header__logo {
@@ -326,6 +336,10 @@ a {
 
 .hero__btn:hover {
   border-color: var(--accent);
+  color: var(--bg);
+}
+
+.hero__btn:hover .btn-arrow {
   color: var(--bg);
 }
 
@@ -747,10 +761,6 @@ a {
   margin-top: 8px;
 }
 
-.card {
-  cursor: pointer;
-}
-
 /* ===== HEALING TABS ===== */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(8px); }
@@ -1046,11 +1056,11 @@ a {
     top: 8px;
   }
 
-  .heal-nav {
+  .heal-sub-nav {
     gap: 6px;
   }
 
-  .heal-btn {
+  .heal-sub {
     padding: 7px 14px;
     font-size: 10px;
   }
@@ -1114,4 +1124,26 @@ a {
 .card.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__tags,
+  .hero__title,
+  .hero__subtitle,
+  .hero__btn {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  .card {
+    opacity: 1;
+    transform: none;
+    transition: background 0.3s;
+  }
+
+  .heal-section.active,
+  .heal-sub-panel.active {
+    animation: none;
+  }
 }

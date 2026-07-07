@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Д•К — Тату. Пирсинг. Микродермал.</title>
+  <meta name="description" content="Дарья К. — мастер по тату, пирсингу и микродермалам. Безопасность, эстетика, индивидуальный подход. Записаться можно во ВКонтакте." />
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,11 +27,11 @@
   <div class="mobile-menu" id="mobileMenu">
     <button class="mobile-menu__close" id="menuClose">✕</button>
     <nav class="mobile-menu__nav">
-      <a href="#about">О мастере</a>
+      <a href="#" data-modal="modal-about">О мастере</a>
       <a href="#services">Услуги</a>
-      <a href="#contraindications">Противопоказания</a>
-      <a href="#preparation">Подготовка</a>
-      <a href="#healing">Заживление</a>
+      <a href="#" data-modal="modal-contra">Противопоказания</a>
+      <a href="#" data-modal="modal-prep">Подготовка</a>
+      <a href="#" data-modal="modal-heal">Заживление</a>
       <a href="#contact">Записаться</a>
     </nav>
     <div class="mobile-menu__social">
@@ -404,7 +405,7 @@
             <button class="heal-sub" data-sub="nipple">Соски</button>
           </div>
 
-          <div class="heal-sub-panel" data-sub="lobe">
+          <div class="heal-sub-panel active" data-sub="lobe">
             <div class="heal-time">
               <span class="heal-time__num">1,5 – 3</span>
               <span class="heal-time__unit">месяца</span>

@@ -20,7 +20,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (mobileMenu) {
     mobileMenu.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', closeMobileMenu);
+      link.addEventListener('click', e => {
+        const modalId = link.dataset.modal;
+        closeMobileMenu();
+        if (modalId) {
+          e.preventDefault();
+          setTimeout(() => openModal(modalId), 350);
+        }
+      });
     });
   }
 
@@ -81,6 +88,16 @@ document.addEventListener('DOMContentLoaded', () => {
       if (panel) panel.classList.add('active');
     });
   });
+
+  // ── Header scroll effect ─────────────────────────────────
+  const header = document.querySelector('.header');
+  if (header) {
+    function updateHeader() {
+      header.classList.toggle('scrolled', window.scrollY > 80);
+    }
+    window.addEventListener('scroll', updateHeader, { passive: true });
+    updateHeader();
+  }
 
   // ── Card scroll reveal ───────────────────────────────────
   const cards = document.querySelectorAll('.card');
