@@ -1140,6 +1140,48 @@ a {
   }
 }
 
+/* ===== LANDSCAPE PHONES ===== */
+/* When phone is rotated sideways, restore right-side photo layout */
+@media (orientation: landscape) and (max-height: 500px) {
+  .hero__photo {
+    top: 0;
+    bottom: 0;
+    left: auto;
+    right: 0;
+    width: 55%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    opacity: 1;
+    filter: drop-shadow(-20px 0 40px rgba(0, 0, 0, 0.8));
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 12%, black 80%, transparent 100%),
+                        linear-gradient(to top, transparent 0%, black 5%);
+    -webkit-mask-composite: source-in;
+    mask-image: linear-gradient(to right, transparent 0%, black 12%, black 80%, transparent 100%),
+                linear-gradient(to top, transparent 0%, black 5%);
+    mask-composite: intersect;
+  }
+
+  .hero__content {
+    padding: 0 28px 28px;
+    max-width: 48%;
+    margin-top: auto;
+  }
+
+  .hero__title {
+    font-size: clamp(28px, 9vh, 52px);
+    margin-bottom: 10px;
+  }
+
+  .hero__subtitle {
+    margin-bottom: 16px;
+  }
+
+  .hero__mobile-deco {
+    display: none;
+  }
+}
+
 /* ===== ANIMATIONS ===== */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(30px); }
