@@ -225,6 +225,11 @@ a {
   mask-composite: intersect;
 }
 
+/* ===== MOBILE DECORATIONS ===== */
+.hero__mobile-deco {
+  display: none;
+}
+
 /* ===== FERNS ===== */
 .ferns {
   position: absolute;
@@ -1078,6 +1083,60 @@ a {
 
   .footer__left {
     order: 3;
+  }
+
+  /* Mobile corner botanicals */
+  .hero__mobile-deco {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 62vh;
+    z-index: 3;
+    pointer-events: none;
+    overflow: hidden;
+  }
+
+  .mob-fern {
+    position: absolute;
+    opacity: 0.44;
+  }
+
+  .mob-fern--bl {
+    bottom: -8px;
+    left: -16px;
+    width: 120px;
+    height: auto;
+  }
+
+  .mob-fern--br {
+    bottom: -8px;
+    right: -16px;
+    width: 120px;
+    height: auto;
+    transform: scaleX(-1);
+  }
+
+  .mob-sparkle {
+    position: absolute;
+    color: var(--accent);
+    font-size: 9px;
+    opacity: 0.45;
+    line-height: 1;
+  }
+
+  .mob-sparkle--sm {
+    font-size: 6px;
+    opacity: 0.3;
+  }
+
+  .mob-sparkle--dot {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: var(--accent);
+    opacity: 0.3;
   }
 }
 
